@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+    .kasaLogo {
+        width: 40%;
+    }
+    .navLink {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        list-style-type: none;
+    }
+    header a {
+            color: #FF6060;
+    }
