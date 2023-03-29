@@ -1,0 +1,19 @@
+*{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #FF6060;
+    text-align: center;
+}
+h1 {
+    font-size: 96px;
+    font-weight: 700;
+}
+p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 133px;
+
+}
+link {
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -7,8 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Lodging from './components/Lodging/Lodging';
 import About from './pages/About/About';
+import Error404 from './components/Error404/Error404'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,9 +18,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/About" element={<About />} />
-        {/* <Route path="/lodging" element={<Lodging />} /> */}
+        <Route path="*" element={<Error404 />} />
       </Routes>
-      <Footer />
     </Router>
   </React.StrictMode>
 );

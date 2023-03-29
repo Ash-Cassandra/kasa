@@ -1,4 +1,5 @@
 import Banner from './components/Banner/Banner';
+import Footer from './components/Footer/Footer';
 import Lodging from './components/Lodging/Lodging';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Banner />
       <Lodging />
+      <Footer />
     </div>
   );
 }
