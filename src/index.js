@@ -5,7 +5,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
-import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Error404 from './components/Error404/Error404'

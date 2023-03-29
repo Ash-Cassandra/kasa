@@ -1,0 +1,33 @@
+* {
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+       margin: auto;
+}
+.imgAbout {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+button {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #FF6060;
+    color: white;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    border-style: none;
+}
+p {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 27px 0 10px 0;
+    font-size: 12px ;
+    font-weight: 400;
+    border-radius: 0 0 5px 5px;
+    background-color: #F6F6F6 ;
+}
