@@ -37,3 +37,13 @@ button {
 .arrow {
     margin: 0;
 }
+
+/* Styles pour les écrans de 600px ou plus */
+@media screen and (min-width: 600px) {
+    .imgAbout {
+        max-height: 100px;
+        object-fit: cover;
+    }
+    button, .description {
+        max-width: 1023px;
+}}
