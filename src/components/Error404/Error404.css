@@ -18,3 +18,17 @@ link {
     font-size: 14px;
     font-weight: 500;
 }
+
+/* Styles pour les écrans de 600px ou plus */
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 192px;
+    }
+}
+
+/* Styles pour les écrans  de 1000 px ou plus */
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 288px;
+    }
+}
