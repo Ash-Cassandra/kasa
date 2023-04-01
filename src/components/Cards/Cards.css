@@ -1,0 +1,20 @@
+.card {   
+    position: relative;
+    background-color: brown;
+    width: 90%;
+    height: 255px;
+    border-radius: 10px;
+}
+.imgCard {
+    width: 100%;
+    height: auto;
+}
+.cardTitle {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

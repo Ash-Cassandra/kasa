@@ -8,6 +8,7 @@ import App from './App';
 import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Error404 from './components/Error404/Error404'
+import Lodging from './components/Lodging/Lodging';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Lodging" element={<Lodging />}/>
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>

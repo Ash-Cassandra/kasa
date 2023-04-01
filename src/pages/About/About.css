@@ -1,6 +1,6 @@
 * {
-        font-family: Montserrat, Arial, Helvetica, sans-serif;
-       margin: auto;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    margin: auto;
 }
 .imgAbout {
     width: 90%;
@@ -9,6 +9,9 @@
     border-radius: 10px;
 }
 button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 90%;
     height: 30px;
     border-radius: 5px;
@@ -20,7 +23,7 @@ button {
     font-weight: 500;
     border-style: none;
 }
-p {
+.description {
     width: 90%;
     height: auto;
     text-align: center;
@@ -30,4 +33,7 @@ p {
     font-weight: 400;
     border-radius: 0 0 5px 5px;
     background-color: #F6F6F6 ;
+}
+.arrow {
+    margin: 0;
 }

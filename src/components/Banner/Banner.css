@@ -20,9 +20,11 @@
     }
     .titleBanner {
         position: absolute;
+        bottom: 25px;
         color: white;
         font-weight: 400;
         font-size: 28px;
         line-height: 1;
         margin-left: 16px;
+        text-align: left;
     }

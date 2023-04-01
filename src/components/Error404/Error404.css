@@ -6,11 +6,12 @@
 h1 {
     font-size: 96px;
     font-weight: 700;
+    margin-top: 133px ;
 }
-p {
+.textError404 {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 133px;
+    margin:  0 25px 133px 25px;
 
 }
 link {

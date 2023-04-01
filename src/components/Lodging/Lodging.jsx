@@ -1,17 +1,19 @@
-import {  useState } from "react"
-import data from "../../lodging.json"
+import {  useState, useEffect } from "react"
+import item from "../../lodging.json"
 import "./Lodging.css"
 
 function Lodging() {
-    const [item, setItem] = useState(data)
+//     const [item, setItem] = useState([])
 
-// useEffect(() => {
-//     fetch('/lodging.json')
-//          .then((response) => response.json()
-//          .then(({ Data }) => console.log(Data))
-//          .catch((error) => console.log(error))
-//      )
-//  }, [])
+//     useEffect(() => {
+//       fetch('http://localhost:3000/src/lodging.json')
+//           .then(response => response.json())
+//           .then(data => {
+//               console.log(data);
+//               setItem(data);
+//           })
+//           .catch(error => console.log(error));
+//   }, []);
 
  return (
     <div>
@@ -25,10 +27,6 @@ function Lodging() {
          </div>
 
         ))}
-        {/* {item.map((item) => (
-        ))}
-        {item.map((item) => (
-            ))} */}
     </div>
      )} 
 
