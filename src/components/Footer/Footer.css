@@ -1,13 +1,18 @@
 footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 209px;
     width: 100%;
     background-color: black;
 }
 .kasaLogoBlack {
-    margin-top: 17%;
+    width: auto;
+    height: 45px;
+    margin: 0;
 }
 .copyright {
-    margin-bottom: 15%;
+    margin: 0;
 }
