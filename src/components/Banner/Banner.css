@@ -13,7 +13,7 @@
         border-radius: 10px;
     }
     .imgBanner {
-        position: relative;
+        position: absolute;
     }
     .backgroundBanner {
         position: absolute;
@@ -28,4 +28,24 @@
         margin-left: 16px;
         text-align: left;
     }
+    .titleBannerDesktop {
+        display: none;
+    }
 
+    /* Style pour les érans de plus de 610px */
+    @media screen and (min-width: 610px) {
+        .banner {
+            justify-content: center;
+        }
+        .titleBanner {
+            display: none;
+        }
+        .titleBannerDesktop {
+            display: block;
+            position: absolute;
+            bottom: 35px;
+            color: white;
+            font-weight: 400;
+            font-size: 38px;
+        }
+    }
