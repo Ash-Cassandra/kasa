@@ -9,18 +9,23 @@ import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Error404 from './components/Error404/Error404'
 import Lodging from './components/Lodging/Lodging';
+import Sheet from './pages/Sheet/Sheet'
+import LodgingProvider from './components/Lodging/Lodging';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
+    <LodgingProvider>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/About" element={<About />} />
         <Route path="/Lodging" element={<Lodging />}/>
+        <Route path="/Sheet" element={<Sheet />}/>
         <Route path="*" element={<Error404 />} />
       </Routes>
+    </LodgingProvider>
     </Router>
   </React.StrictMode>
 );
