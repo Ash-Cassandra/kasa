@@ -5,7 +5,7 @@ import './About.css'
 
 function About() {
     return (
-    <div>
+    <div className='aboutText'>
         <img src={imgAbout} className='imgAbout' alt="montagnes" />
         <Collaps title="Fiabilité ">
             <p className='description'>Les annonces postées sur Kasa garantissent une fiabilité titale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>

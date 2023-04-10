@@ -9,11 +9,13 @@ function Cards() {
     return (
         <div>
             {data.map(item => (
+                <div className='container'>
              <div className='card' key={item.id}>
-            <div className='gradient'></div>
-            <img className='imgCard' src={item.cover} alt={item.title} />
-            <div className='cardTitle'>{item.title}</div>
-        </div>   
+                <div className='gradient'></div>
+                <img className='imgCard' src={item.cover} alt={item.title} />
+                <div className='cardTitle'>{item.title}</div>
+            </div>
+            </div>   
             ))}
         </div>
     )
