@@ -9,7 +9,7 @@ import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Error404 from './components/Error404/Error404'
 import Lodging from './components/Lodging/Lodging';
-import Sheet from './pages/Sheet/Sheet'
+import Sheet from './components/Sheet/Sheet'
 import LodgingProvider from './components/Lodging/Lodging';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
