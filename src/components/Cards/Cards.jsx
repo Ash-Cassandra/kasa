@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import "./Cards.css"
+import "../../Global.css"
 import DataContext from '../../dataContext'
 
 function Cards() {
@@ -7,16 +8,16 @@ function Cards() {
 
     console.log(data)
     return (
-        <div>
+        <div>                
+            <div className='container'>
             {data.map(item => (
-                <div className='container'>
-             <div className='card' key={item.id}>
+             <figure className='card' key={item.id}>
                 <div className='gradient'></div>
                 <img className='imgCard' src={item.cover} alt={item.title} />
-                <div className='cardTitle'>{item.title}</div>
-            </div>
-            </div>   
-            ))}
+                <figcaption className='cardTitle'>{item.title}</figcaption>
+            </figure>
+               
+            ))}</div>
         </div>
     )
 }

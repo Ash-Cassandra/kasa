@@ -1,24 +1,14 @@
 .container {
-    width: 100%;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
-.card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.imgCard, .gradient {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 230px;
-    height: auto;
-}
-/* .card {
+.card { 
    position: relative;
     width: 335px;
     height: 255px;
-    margin:22px auto;   
+    margin:22px ;   
 }
 .imgCard, .gradient {
     position: absolute;
@@ -28,12 +18,11 @@
     object-fit: cover;
 }
 .gradient{    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
-z-index: 1;}
+z-index: 2;}
 .imgCard{
     left: 0;
-    z-index: 2;
+    z-index: 1;
 }
-
 .cardTitle {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     text-align: left ;
@@ -45,12 +34,12 @@ z-index: 1;}
     left: 10px;
     max-width: 90%;
     z-index: 3;
-} */
+}
 
-/* @media screen and (min-width: 600px){ 
-    .container {
-        display: flex;
-    flex-direction: row;
-    }
+ @media screen and (min-width: 600px){ 
+    .card { 
+         width: 340px;
+         height: 340px;
+     }
    
-} */
+}

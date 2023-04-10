@@ -43,7 +43,7 @@
         .titleBannerDesktop {
             display: block;
             position: absolute;
-            bottom: 35px;
+            bottom: 10px;
             color: white;
             font-weight: 400;
             font-size: 38px;
