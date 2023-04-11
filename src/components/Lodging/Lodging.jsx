@@ -1,6 +1,5 @@
 import {  useState, useEffect } from "react"
 import DataContext from "../../dataContext"
-import "./Lodging.css"
 
 
  function LodgingProvider(props) {

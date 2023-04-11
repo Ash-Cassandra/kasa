@@ -1,16 +1,27 @@
+import redStar from "./redStar.png"
+import greyStar from "./greyStar.png"
 
+const Rating = (props) => {
+  const rangeValue = props.rangeValue;
+  const range = [1, 2, 3, 4, 5];
 
-function Rating(props){
- const rangeValue = props.rangeValue
- const range = [1, 2, 3, 4, 5]
+const stars = range.map((rating) => {
+  if (rating <= rangeValue) {
+    return <img src={redStar} alt="etoile" />;
+  } else {
+    return <img src={greyStar} alt="etoile" />;
+  }
+});
 
- return (
+return (
   <div>
-    {range.map((rangeElem) => 
-    rangeValue >= rangeElem ? <span key={rangeElem.toString()}>O</span> : null
-    )}
+    <div>{stars}</div>
   </div>
- )
-}  
+);
+};
+
+
+
+
 
 export default Rating

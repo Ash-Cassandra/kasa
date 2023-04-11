@@ -1,0 +1,65 @@
+.Sheet {
+    /* margin: auto; */
+}
+.Sheet .itemPictures .itemPicture {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+}
+.itemTitle {
+    font-weight: 500;
+    font-size: 28px
+}
+.itemLocation {
+    font-size: 22px;
+}
+.itemTags {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.itemTags li {    
+    white-space: nowrap;
+    background-color: #FF6060;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+}    
+.itemRatingHost {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemHost {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+.itemHostImg {
+    width: 52px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+}
+.itemHostName {
+    font-size: 18px;
+    text-align: right;
+}
+
+.itemEquipment, .itemDescription {
+    width: 90%;
+    height: auto;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px 0 10px 0;
+    font-size: 12px ;
+    font-weight: 400;
+    border-radius: 0 0 5px 5px;
+    background-color: #F6F6F6 ;
+}

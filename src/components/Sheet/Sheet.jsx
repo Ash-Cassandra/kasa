@@ -19,43 +19,45 @@ function Sheet() {
       <div className="Sheet">
         {data.map(item => (
           <div>
-            <div className="itemSheet" key={item.id}>            
+            <div className="itemPictures" key={item.id}>            
               {item.pictures.map(picture => (
-                <div className="itemImg" key={picture.id}>
-                  <img src={picture} alt={item.title} />
+                <div  key={picture.id}>
+                  <img className="itemPicture" src={picture} alt={item.title} />
                 </div>
               ))}  
             </div>
             <div className="itemTitle">
-              <h2>{item.title}</h2>
+              <p>{item.title}</p>
             </div>
             <div className="itemLocation">
               <p>{item.location}</p>
             </div>
-            <div className="itemTags">
-              <ul>
+            <div >
+              <ul className="itemTags">
                 {item.tags.map(tag => (
                   <li>{tag}</li>
                 ))}
               </ul>
             </div>
-            <div className="itemRating">
-              <Rating rangeValue={item.rating} />
+            <div className="itemRatingHost">
+              <div className="itemRating">
+                <Rating rangeValue={item.rating} />
+              </div>
+              <div className="itemHost">
+                    <p className="itemHostName">{item.host.name}</p>
+                    <img className="itemHostImg" src={item.host.picture} alt={"photo de " + item.host.name}/>
+              </div>
             </div>
-            <div className="itemHost">
-                  <p>{item.host.name}</p>
-                  <img src={item.host.picture} alt={"photo de " + item.host.name}/>
-            </div>
-            <div className="itemDescription">
-              <Collaps title="Description">
-                <p>{item.description}</p>
+            <div >
+              <Collaps  title="Description">
+                <p className="itemDescription">{item.description}</p>
               </Collaps>
             </div>
-            <div className="itemEquipment">
-              <Collaps title="Equipements">
-                <ul>
+            <div >
+              <Collaps  title="Equipements">
+                <ul className="itemEquipment">
                   {item.equipments.map(equipment => (
-                      <li>{equipment}</li>
+                      <li >{equipment}</li>
                   ))}
                 </ul>
               </Collaps>
