@@ -5,13 +5,16 @@ import DataContext from '../../dataContext'
 
 function Cards() {
     const data = useContext(DataContext);
+    const handleClick = (id) => {
+        console.log(`carte cliquée : ${id}`);
+        window.location.href=(`./Sheet`)
+    }
 
-    console.log(data)
     return (
         <div>                
             <div className='container'>
             {data.map(item => (
-             <figure className='card' key={item.id}>
+             <figure className='card' key={item.id} onClick={() => handleClick(item.id)}>
                 <div className='gradient'></div>
                 <img className='imgCard' src={item.cover} alt={item.title} />
                 <figcaption className='cardTitle'>{item.title}</figcaption>
