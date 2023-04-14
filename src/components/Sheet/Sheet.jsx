@@ -3,6 +3,7 @@ import Collaps from "../Collaps/Collaps";
 import DataContext from "../../dataContext";
 import "./Sheet.css"
 import Rating from "../Rating/Rating";
+// import Carousel from "../Carousel/Carousel";
 
 function Sheet() {
     const data = useContext(DataContext);
@@ -10,22 +11,23 @@ function Sheet() {
   if (!data || !Array.isArray(data)) {
     return (
       <div>
-        <p>erreur survenue</p>
+        <p>Une erreur est survenue, veuillez réessayer.</p>
       </div>
     );
   }
   
-    return (
+   else return (
       <div className="Sheet">
         {data.map(item => (
           <div>
-            <div className="itemPictures" key={item.id}>            
-              {item.pictures.map(picture => (
-                <div  key={picture.id}>
-                  <img className="itemPicture" src={picture} alt={item.title} />
-                </div>
-              ))}  
-            </div>
+            <div className="itemPictures" key={item.id}> 
+            <div>{item.pictures.map(picture => (            
+            <div key={picture.id}>        
+                <img className='itemPicture' src={picture} alt={item.title} />
+            </div>  
+            
+        ))}   </div>         
+        </div> 
             <div className="itemTitle">
               <p>{item.title}</p>
             </div>

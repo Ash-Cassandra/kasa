@@ -8,8 +8,8 @@ import DataContext from "../../dataContext"
    useEffect(() => {
       fetch("./lodging.json")
           .then(data => {
-            data.json().then(apparts => {
-              setItem(apparts);
+            data.json().then(lodgings => {
+              setItem(lodgings);
             })
           })
           .catch(error => console.log(error));
