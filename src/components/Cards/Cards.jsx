@@ -4,14 +4,15 @@ import "../../Global.css"
 import DataContext from '../../dataContext'
 
 function Cards() {
-    const data = useContext(DataContext);
-    const handleClick = (id) => {
-        console.log(`carte cliquée : ${id}`);
-        window.location.href=(`./Sheet`)
-    }
+    const data = useContext(DataContext);   
 
-    return (
-        <div>                
+    const handleClick = (id) => {
+        window.location.href=`./Sheet/${id}`
+
+    }
+    return (    
+
+        <div>         
             <div className='container'>
             {data.map(item => (
              <figure className='card' key={item.id} onClick={() => handleClick(item.id)}>

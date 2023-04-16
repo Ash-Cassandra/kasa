@@ -1,18 +1,17 @@
-import React, {useContext} from 'react'
+import {useContext} from 'react'
 import DataContext from "../../dataContext";
+import Sheet from '../Sheet/Sheet';
 
-function LodgingSorted() {
+function  LodgingSorted () {
     const data = useContext(DataContext);
     const dataArray = [];
-    const getElementById = (id) => {
-        return dataArray.find(item => item.id === id);
-    }
+console.log('data1', data)
 
     data.map(item => (
         dataArray.push(item)
     ))
-console.log("dataArray", dataArray)
-   
+console.log("dataArray", dataArray) 
+return <Sheet dataArray={dataArray} />
 }
 
 export default LodgingSorted

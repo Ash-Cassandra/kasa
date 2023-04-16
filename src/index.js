@@ -12,6 +12,7 @@ import Lodging from './components/Lodging/Lodging';
 import Sheet from './components/Sheet/Sheet'
 import LodgingProvider from './components/Lodging/Lodging';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -22,7 +23,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/About" element={<About />} />
         <Route path="/Lodging" element={<Lodging />}/>
-        <Route path="/Sheet" element={<Sheet />}/>
+        <Route path="/Sheet/:id" element={<Sheet />}/>
         <Route path="*" element={<Error404 />} />
       </Routes>
     </LodgingProvider>
