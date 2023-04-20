@@ -23,6 +23,15 @@
         .btnCarouselRight{  
             right: 0;
         }
+        .indexCurrentImg{
+            position: absolute;
+            bottom: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .indexCurrentImg p{
+            color: #F6F6F6;
+          }
 .itemTitle {
     font-weight: 500;
     font-size: 22px

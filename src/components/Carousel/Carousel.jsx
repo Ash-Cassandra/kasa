@@ -12,17 +12,27 @@ const handleNext = () => {
 const handlePrev = () => {
     setCurrentImg ((prevImg) => (prevImg === 0 ? props.children.length - 1 : prevImg - 1))
 }
-console.log(currentImg)
- return (
-<div className='divCarousel'>
-  {props.children[currentImg]}
+
+    
+ const index = currentImg + 1
+ const counter = props.children.length > 1 ? <p>{index} / {props.children.length} </p> : null
+const buttons = props.children.length > 1 ? (
+    <div>
         <button className='buttonCarousel btnCarouselRight' onClick={handleNext}>
             <img src={nextArrow} alt="suivant" />
         </button> 
         <button className='buttonCarousel btnCarouselLeft' onClick={handlePrev}>
             <img src={previousArrow} alt="précédent" />
         </button>
-        
+    </div>
+) : null
+return (
+<div className='divCarousel'>
+  {props.children[currentImg]}
+            {buttons}
+        <div className='indexCurrentImg'>
+            {counter}
+        </div>
     </div>  
     
 
