@@ -2,6 +2,8 @@
 import Rating from "../Rating/Rating"
 import Collaps from "../Collaps/Collaps"
  import {useParams} from 'react-router-dom'
+import Carousel from "../Carousel/Carousel";
+import './Sheet.css'
 
 
 function LodgingSheet() {
@@ -18,25 +20,28 @@ function LodgingSheet() {
       .catch(error => console.log(error));
   }, []);
        const dataId = lodgingsData.find(data => data.id === id);
-console.log("id",{id})
- console.log("dataId",dataId)
 
 if (lodgingsData.length === 0 || !dataId) {
   return (
-    <div>
+    <div className="error" >
       <p>Une erreur est survenue, veuillez réessayer.</p>
     </div>
   );
 } else
 return (      
   <div className="Sheet">
-        <div className="itemPictures" key={dataId.id}> 
-          {dataId.pictures.map(picture => (
-            <div key={picture.id}>        
-              <img className='itemPicture' src={picture} alt={dataId.title} />
-            </div>  
-          ))}   
-        </div>         
+    <Carousel>
+        {dataId.pictures.map((picture, index) => (
+          <div className="itemPictures" key={index}>
+            <img
+              className="itemPicture"
+              src={picture}
+              alt={dataId.title}
+            />
+          </div>
+        ))}
+    </Carousel>   
+        
         <div className="itemTitle">
           <p>{dataId.title}</p>
         </div>

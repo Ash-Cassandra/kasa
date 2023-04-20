@@ -1,44 +1,30 @@
-import React, {useContext, useState} from 'react'
+import React, {useState} from 'react'
 import nextArrow from "./nextArrow.png"
-import DataContext from "../../dataContext";
+import previousArrow from "./previousArrow.png"
 
+ function Carousel(props) {
+    const [currentImg, setCurrentImg] = useState(0);
 
+const handleNext = () => {
+    setCurrentImg ((prevImg) => (prevImg === props.children.length -1 ? 0 : prevImg + 1))
+}
 
-
-
- function Carousel() {
-    const data = useContext(DataContext);
-    // const [currentImg, setCurrentImg] = useState(0);
-  console.log(data)
-
-
-  
-  if (!data || !Array.isArray(data)) {
-        return (
-          <div>
-            <p>Une erreur est survenue, veuillez réessayer.</p>
-          </div>
-        );
-      }
-
- else return (
-    <div className='carousel'>
-    {data.map(item => (
-    <div key={item.id}>
-        {item.picture.map(picture => (            
-            <div key={picture.id}>        
-                <img className='itemPicture' src={picture} alt={item.title} />
-            </div>  
-        ))}
-        </div>
-    ))}
-
-        {/* <img src={picture[currentImg]} alt={"actuelle"} />
-
-        <button onClick={() => setCurrentImg((currentImg + 1))}>
+const handlePrev = () => {
+    setCurrentImg ((prevImg) => (prevImg === 0 ? props.children.length - 1 : prevImg - 1))
+}
+console.log(currentImg)
+ return (
+<div className='divCarousel'>
+  {props.children[currentImg]}
+        <button className='buttonCarousel btnCarouselRight' onClick={handleNext}>
             <img src={nextArrow} alt="suivant" />
-        </button>  */}
+        </button> 
+        <button className='buttonCarousel btnCarouselLeft' onClick={handlePrev}>
+            <img src={previousArrow} alt="précédent" />
+        </button>
+        
     </div>  
+    
 
 
     )

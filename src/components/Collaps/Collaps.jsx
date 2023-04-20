@@ -11,7 +11,7 @@ const Collaps = ({ title, children }) => {
 
   return (
     <div>
-      <button onClick={toggleCollaps}>
+      <button className='buttonCollaps' onClick={toggleCollaps}>
         {title}
         {isOpen ? <img src={arrow_top} alt="#" className='arrow'/> : <img src={arrow_bottom} alt="#" className='arrow'/>}
       </button>
