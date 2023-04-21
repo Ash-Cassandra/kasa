@@ -1,8 +1,6 @@
 .banner {
     position: relative;
     display: flex;
-    align-items: center;
-    width: 90%;
     height: 111px;
     margin: 22px auto;
 }
@@ -20,7 +18,7 @@
     }
     .titleBanner {
         position: absolute;
-        bottom: 25px;
+        bottom: 15px;
         color: white;
         font-weight: 400;
         font-size: 28px;
@@ -36,6 +34,7 @@
     @media screen and (min-width: 610px) {
         .banner {
             justify-content: center;
+            margin: 100px;
         }
         .titleBanner {
             display: none;

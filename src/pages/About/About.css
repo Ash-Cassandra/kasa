@@ -41,10 +41,13 @@
 
 /* Styles pour les écrans de 600px ou plus */
 @media screen and (min-width: 600px) {
+    .aboutText{
+        margin: 0 208px;
+    }
     .imgAbout {
+        margin: 100px;
+        max-width: 85%;
         max-height: 100px;
         object-fit: cover;
     }
-    button, .description {
-        max-width: 1023px;
-}}
+}
