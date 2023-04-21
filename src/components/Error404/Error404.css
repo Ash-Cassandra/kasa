@@ -6,12 +6,11 @@
 h1 {
     font-size: 96px;
     font-weight: 700;
-    margin-top: 133px ;
 }
 .textError404 {
     font-size: 18px;
     font-weight: 500;
-    margin:  0 25px 133px 25px;
+    margin:  0 25px 83px 25px;
 
 }
 link {
@@ -23,12 +22,5 @@ link {
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 192px;
-    }
-}
-
-/* Styles pour les écrans  de 1000 px ou plus */
-@media screen and (min-width: 1000px) {
-    h1 {
-        font-size: 288px;
     }
 }

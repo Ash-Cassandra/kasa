@@ -9,7 +9,7 @@ header {
     font-size: 12px;
 }
     .kasaLogo {
-        width: 35%;
+        width: 135px;
         margin: 0;
     }
     .navLink {
@@ -18,21 +18,26 @@ header {
         gap: 15px;
         list-style-type: none;
         margin: 0;
+        text-transform: uppercase;
     }
     header a {
-            color: #FF6060;
+            color: #FF6060; 
+           text-decoration: none;
+
     }
 
-/* Styles pour les écrans de 600px ou plus */
-@media screen and (min-width: 600px) {
+/* Styles pour les écrans de 800px ou plus */
+@media screen and (min-width: 910px) {
     header {
         font-size: 18px;
         margin: 25px 100px;
     }
     .kasaLogo {
-        width: 25%;
+        width: 285px;
     }
     .navLink {
         gap:45px;
+        text-transform: none;
     }
+    
 }

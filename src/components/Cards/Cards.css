@@ -1,14 +1,15 @@
 .container {
-   width: 100%;
+   max-width: 100%;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   margin: 0 20px;
 }
 .card { 
    position: relative;
     width: 335px;
     height: 255px;
-    margin:22px ;   
+    margin:20px 15px ;   
 }
 .imgCard, .gradient {
     position: absolute;
@@ -35,8 +36,18 @@ z-index: 2;}
     max-width: 90%;
     z-index: 3;
 }
-
- @media screen and (min-width: 600px){ 
+@media screen and (min-width: 770px){ 
+.container {
+    justify-content: space-around;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+ 
+}
+}
+ @media screen and (min-width: 900px){ 
+    .container{
+        margin: 100px;
+    }
     .card { 
          width: 340px;
          height: 340px;

@@ -7,8 +7,8 @@ import './Header.css'
         <header>
             <img src={kasaLogo} className="kasaLogo" alt="logo de kasa" />
                 <nav className='navLink'>
-                    <Link to="/">ACCUEIL</Link>
-                    <Link to="./About">A PROPOS</Link>
+                    <Link to="/">Accueil</Link>
+                    <Link to="./About">A propos</Link>
                 </nav>
         </header>
     )

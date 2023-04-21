@@ -50,4 +50,7 @@
         max-height: 100px;
         object-fit: cover;
     }
+    .buttonCollaps {
+        width: 100%;
+    }
 }

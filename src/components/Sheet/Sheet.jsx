@@ -5,6 +5,7 @@ import Collaps from "../Collaps/Collaps"
 import Carousel from "../Carousel/Carousel";
 import './Sheet.css'
 import DataContext from '../../dataContext'
+import Error404 from '../Error404/Error404';
 
 
 
@@ -12,10 +13,12 @@ function LodgingSheet() {
   const data = useContext(DataContext);   
   const {id} = useParams()
   
-  
-       const dataId = data.find(data => data.id === id);
+  const dataId = data.find(data => data.id === id);
+if (!id || !dataId) { 
+  return <Error404 /> }
 
-if (data.length === 0 || !dataId) {
+else 
+if (data.length === 0) {
   return (
     <div className="error" >
       <p>Une erreur est survenue, veuillez réessayer.</p>
