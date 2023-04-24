@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
-import reportWebVitals from '../src/reportWebVitals';
+import reportWebVitals from './reportWebVitals';
 
-import App from '../src/App';
-import Header from '../src/components/Header/Header';
-import About from '../src/pages/About/About';
-import Error404 from '../src/components/Error404/Error404'
-import Lodging from '../src/components/Lodging/Lodging';
-import Sheet from '../src/components/Sheet/Sheet'
-import LodgingProvider from '../src/components/Lodging/Lodging';
+import App from './App';
+import Header from './components/Header/Header';
+import About from './pages/About/About';
+import Error404 from './components/Error404/Error404'
+import Lodging from './components/Lodging/Lodging';
+import Sheet from './components/Sheet/Sheet'
+import LodgingProvider from './components/Lodging/Lodging';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,7 +32,4 @@ root.render(
 );
 
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
