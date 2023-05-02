@@ -5,19 +5,15 @@ const Rating = (props) => {
   const rangeValue = props.rangeValue;
   const range = [1, 2, 3, 4, 5];
 
-const stars = range.map((rating, index) => {
-  if (rating <= rangeValue) {
-    return <img src={redStar} alt="etoile" key={`rating-${index}`}/>;
-  } else {
-    return <img src={greyStar} alt="etoile" />;
-  }
-});
 
 return (
   <div>
-    <div>{stars}</div>
+    {range.map((rating, index) => (
+      <img key={index} src={index < rangeValue ? redStar : greyStar} alt="etoile" />
+      )
+    )}
   </div>
-);
+)
 };
 
 

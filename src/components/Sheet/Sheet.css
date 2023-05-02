@@ -91,8 +91,7 @@
     height: auto;
     text-align: left;
     margin-top: 0;
-    margin-bottom: 20px;
-    padding: 20px 4px 10px 4px;
+    padding: 20px 0px 10px 4px;
     font-size: 12px ;
     font-weight: 400;
     border-radius: 0 0 5px 5px;
@@ -107,9 +106,13 @@
 @media screen and (min-width: 810px) {
     .Sheet {
         margin: 0 100px;
+        min-height: 900px;
     }
     .itemPicture {
         height: 415px;
+    }
+    .buttonCarousel{
+        top: 200px;
     }
     .containerHostTags{
         display: flex;
@@ -148,8 +151,8 @@
     .buttonCollaps {
         width: 37vW;
     }
-        .itemDescription, .itemEquipment {
-            width: 36.5vW;
+    .itemDescription, .itemEquipment {
+            width: 36.6vW;
 
         }
 }
