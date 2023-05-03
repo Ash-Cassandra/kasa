@@ -1,12 +1,14 @@
 .aboutText{
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
     margin: 20px;
 }
 .imgAbout {
-    width: 100%;
+    width: 90%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+
 }
 .buttonCollaps {
     display: flex;
@@ -40,12 +42,11 @@
 }
 
 /* Styles pour les écrans de 600px ou plus */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 810px) {
     .aboutText{
         margin: 0 208px;
     }
     .imgAbout {
-        margin: 100px;
         max-width: 85%;
         max-height: 100px;
         object-fit: cover;
