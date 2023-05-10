@@ -1,11 +1,11 @@
  import React, {useContext} from 'react'
-import Rating from "../Rating/Rating"
-import Collaps from "../Collaps/Collaps"
+import Rating from "../../components/Rating/Rating"
+import Collaps from "../../components/Collaps/Collaps"
  import {useParams} from 'react-router-dom'
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
 import './Sheet.css'
 import DataContext from '../../dataContext'
-import Error404 from '../Error404/Error404';
+import Error404 from '../../components/Error404/Error404';
 
 
 
